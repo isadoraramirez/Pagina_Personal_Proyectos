@@ -1,9 +1,12 @@
-// function limpiarSelect(){
-//   listQuestion.innerHTML = "";
-// }
-// function setearCiudad(ciudad){
-//   listQuestion.dataset.ciudad =  ciudad;
-// }
+// icono menu
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+
+
+
+
 // const para desplegar menu
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("nav-menu");
@@ -40,30 +43,8 @@ btnFilters.addEventListener('click', () => {
 window.onload = function cargar(){
   filters.classList.remove('ocultar');
 }
-//acceder a la data de cada pais
-// const data = window.WORLDBANK;
 
 
-// section donde esta la informacion y el select
-const indicator = document.getElementById("information-filter-inner");
-const listQuestion = document.getElementById("list-question");
-
-// ejecutar el llenado del selector dependiendo del país
-const buttonTypes = Array.from(document.getElementsByClassName('search-country'));
-//console.log(buttonTypes);
-for (let boton in buttonTypes){
-  buttonTypes[boton].addEventListener('click',(e) =>{
-    e.preventDefault() //e.target()
-    let paisElegido = data[e.target.dataset.ciudad].indicators;
-    listQuestion.innerHTML = "";
-    listQuestion.dataset.ciudad = e.target.dataset.ciudad;
-    listQuestion.insertAdjacentHTML('beforeend', '<option value="">Selecciona un tema</option>'); 
-    paisElegido.forEach( ciudad => {
-    listQuestion.insertAdjacentHTML('beforeend', `<option value="${ciudad.indicatorCode}">${ciudad.indicatorName}</option>`);
-    });
-
-  })
-}
 
 
 

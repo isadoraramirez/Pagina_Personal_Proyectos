@@ -10,17 +10,24 @@
   <body>
     <header class="header">
       <section class="header-left">
-        <img class="icon-logo" src="./images/logo.svg" alt="nav">
+     
       </section>
       <section class="header-right">
-            <a  id="nav-icon"  class="nav-icon"><img class="nav-icon" src="./images/menu.svg" alt="nav-icon"> </a>  
-      </section>
+            <!-- <a  id="nav-icon"  class="nav-icon" alt="nav-icon"> </a>   -->
+            <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+<div class="nav-icon" id="nav-icon"  alt="nav-icon" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+          </section>
     </header>
     <nav id="nav-menu" class="nav-menu ocultar">
             <ul>
               <li id="btn-about" class="item-menu">Sobre mi</li>
               <li id="btn-general-filter" class="item-menu">info</li>
-              <li id="btn-news" class="item-menu">info</li>
+              <li id="btn-news" class="item-menu">Proyectos</li>
               <li id="" class="item-menu">Contacto</li>
             </ul>
           </nav>
@@ -58,7 +65,7 @@
         <section id="about" class="about-bancamundial ocultar">
             <article class="who-we-are">
               <h2>Sobre mi</h2>
-              <p>Filósofa, Artista plastica, Desarrolladora Web</p>
+              <p>Front End Developer, Artista Plastica</p>
              
             </article>
             <article class="what-we-do">
@@ -72,13 +79,13 @@
                 <p>PROYECTOS</p>
             </article>
             <article class="information-filter">
-                <a class="btn_mex search-country" id="MEX" data-ciudad="MEX" data-object="countryMex">Trivia</a>
-                <a class="btn_per search-country" id="btn_per" data-ciudad="PER" data-object="countryPer">Cipher</a>
-                <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA" data-object="countryBra">Data Lovers</a>
-                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl">Hackaton Movies</a>
-                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl">Social network</a>
-                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl">Md Links</a>
-                
+                <a class="btn_mex search-country" id="MEX" data-ciudad="MEX" data-object="countryMex" href="https://isadoraramirez.github.io/Trivia-Elizz/src" target="_blank" >Trivia</a>
+                <a class="btn_per search-country" id="btn_per" data-ciudad="PER" data-object="countryPer" href="https://isadoraramirez.github.io/cdmx-2019-01-bc-core-am-cipher/src/index.html" target="_blank">Cipher</a>
+                <a class="btn_bra search-country" id="btn_bra" data-ciudad="BRA" data-object="countryBra" href="https://isadoraramirez.github.io/cdmx-2019-01-bc-core-data-lovers/src/" target="_blank" >Data Lovers</a>
+                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl" href="https://isadoraramirez.github.io/HackatonMovies2019/src/" target="_blank">HackatonMovies2019</a>
+                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl" href="https://isadoraramirez.github.io/CDMX007-social-network/src/index.html" target="_blank" >Social network</a>
+                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="countryChl" href="https://www.npmjs.com/package/md-links-ely" target="_blank" >Md Links</a>
+                <a class="btn_Chl search-country" id="btn_Chl" data-ciudad="CHL" data-object="coun" href= target="_blank" >Burger Queen</a>
             </article>  
             
              
@@ -101,9 +108,9 @@
         </section>    
     </main>
     <footer>
-      <p class="title-footer">2019. Elizabeth Ramírez</p> 
+      <p class="title-footer">2019. Elizabeth Isadora Ramírez Ortź</p> 
     </footer>
-    <script src="./data/worldbank/worldbank.js"></script> 
+   
     <script src="main.js"></script>
     <script src="data.js"></script>
     </body>
