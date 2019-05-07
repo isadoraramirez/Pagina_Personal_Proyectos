@@ -156,16 +156,22 @@ height: auto;
     max-width: 200px;
 }
 .search-country.btn_mex{
-    background-image: url('images/icons/mexico.svg');
+    background-image: url('images/cipher.png');
 }
 .search-country.btn_per{
-    background-image: url('images/icons/peru.svg');
+    background-image: url('images/cipher.png');
 }
 .search-country.btn_bra{
-    background-image: url('images/icons/brazil.svg');
+    background-image: url('images/cipher.png');
 }
 .search-country.btn_Chl{
-    background-image: url('images/icons/chile.svg');
+    background-image: url('images/filmov4.png');
+}
+.search-country.btn_so{
+    background-image: url('images/social\ learning.png');
+}
+.search-country.btn_li{
+    background-image: url('images/mdlinks.png');
 }
 .search-country:hover{
     background-color:#002f54;
