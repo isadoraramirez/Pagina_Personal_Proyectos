@@ -44,7 +44,7 @@ body{
 }
 .nav-menu{
     cursor: pointer;
-    background: #4d4d4d;
+    background: #789ccc;
     text-align: center;
     padding: 0 10px;
     -webkit-transition: all linear 0.5s;
@@ -71,32 +71,13 @@ body{
     padding: 1rem  1rem;
     min-height: 82vh;
 }
-.about-bancamundial{
-    text-align: center;
-}
-.news{
-    width: 100%;
-}
-.news-mexico,
-.news-brazil,
-.news-peru,
-.news-chile
-{
-height: auto;
-}
-.title-indicadores{
+
+.title-in{
     position: relative;
     text-align: center;
 }
-.general-filter{
-    padding: 1.5rem 2rem;
-    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.0);
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.title-indicadores>h1{
+
+.title-in>h1{
     font-size: 2rem;
     margin-top: 0;
     font-size: 1.5rem;
@@ -110,35 +91,22 @@ height: auto;
     display: inline-block;
     width: 100%;
 }
-.list-question{
-    width: 100%;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #808080;
-    width: 100%;
-    height: 40px;
-    outline: none;
-    margin-top: 1rem;
-    border: 1px solid #808080;
-}
-.search-country{
+.option{
     cursor: pointer;
-    min-width: 70px;
-    height: 50px;
+    min-width: 600px;
+    height: 200px;
     line-height: 50px;
     text-align: center;
     padding-left: 52px;
     padding-right: 1rem;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: bold;
     background-color:#f5f5f5;
     border: 1px solid #002f54;
     color:#002f54;
     border-radius: 4px;
     font-size: 1em;
-    background-repeat: no-repeat;
-    background-position: 1rem center;
-    background-size: 30px;
+    
     transition: all linear 300ms;
     -webkit-transition: all linear 300ms;
     -moz-transition: all linear 300ms;
@@ -148,32 +116,32 @@ height: auto;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-    font-size: 1rem;
+    font-size: 3rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
     max-width: 200px;
 }
-.search-country.btn_mex{
+.option.btn_mex{
+    background-image: url('images/.png');
+}
+.option.btn_per{
     background-image: url('images/cipher.png');
 }
-.search-country.btn_per{
-    background-image: url('images/cipher.png');
+.option.btn_bra{
+    background-image: url('images/.png');
 }
-.search-country.btn_bra{
-    background-image: url('images/cipher.png');
-}
-.search-country.btn_Chl{
+.option.btn_Chl{
     background-image: url('images/filmov4.png');
 }
-.search-country.btn_so{
+.option.btn_so{
     background-image: url('images/social\ learning.png');
 }
-.search-country.btn_li{
+.option.btn_li{
     background-image: url('images/mdlinks.png');
 }
-.search-country:hover{
+.option:hover{
     background-color:#002f54;
     border: 1px solid #002f54; 
     color: #fff; 
@@ -207,26 +175,15 @@ height: auto;
     text-align: center;
     font-size: 1rem;
 }
-.news-mexico,
-.news-brazil,
+.item-bar,
+/* .item-bartwo, */
 .news-peru,
 .news-chile{
     height: 250px;
     background-size: 100% 100%;
     background-repeat: no-repeat; 
 }
-.news-mexico{
-    background-image: url('images/cdmx.jpg')
-}
-.news-brazil{
-    background-image: url('images/brazil.jpg')
-}
-.news-peru{
-    background-image: url('images/peru.jpeg')
-}
-.news-chile{
-    background-image: url('images/Chile.jpg')  
-}
+
 footer{
     background-color: #333333;;
     height:50px;;
@@ -300,81 +257,28 @@ footer{
     position: absolute;
     display: none;
   }
-  /* Show the indicator (dot/circle) when checked */
-  .container__check input:checked ~ .checkmark:after {
-    display: block;
-  }
-  /* Style the indicator (dot/circle) */
-  .container__check .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-  }
+  
   .information__filtered{
       margin-top: 2rem;
   }
-  .information__filtered p{
-      background-color: #fff;
-      padding: .5rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,.2);
-      transition: all linear .35s  ;
-      -webkit-transition: all linear .35s  ;
-      -moz-transition: all linear .35s  ;
-      -ms-transition: all linear .35s  ;
-      -o-transition: all linear .35s  ;
-}
-.promedio{
-    text-align: center;
-}
 
-/* .show-canvas{
-    box-sizing:border-box;
-    width:100%;
-} */
+
 
 @media screen and (min-width: 640px){
     .container {
         padding: 1rem 2rem;
         
     }
-    .who-we-are,
-    .what-we-do{
-        padding: 30px;
-        margin-bottom: 20px;
-        -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-    .search-country{
+   
+    .option{
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1rem;
         max-width: 200px;
     }
-    .information-filter{
-        display:flex;
-        justify-content: space-around;
-    }
-    .card-news{
-        display: inline-block;
-        width: 45%;
-        margin-left: 3.5%;
-        text-align: center;
-        vertical-align: top;
-        height: auto;
-        margin-bottom: 30px;
-    }
-    .news-mexico, .news-brazil, .news-peru, .news-chile{
-        height: 300px;
-    }
-    .item-filter-sort{
-        text-align: center;
-    }
+    
+
     .list-question{
         width: 80%;
     }  
