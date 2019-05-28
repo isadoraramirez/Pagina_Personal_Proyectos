@@ -121,7 +121,7 @@ body{
     background-image: url('images/cipher.png');
 }
 .option.btn_bra{
-    background-image: url('images/.png');
+    background-image: url('images/bank.png');
 }
 .option.btn_Chl{
     background-image: url('images/filmov4.png');
@@ -131,6 +131,9 @@ body{
 }
 .option.btn_li{
     background-image: url('images/mdlinks.png');
+}
+.option.btn_Chli{
+    background-image: url('images/burger.png');
 }
 .option:hover{
     background-color:#002f54;
